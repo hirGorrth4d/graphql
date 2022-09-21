@@ -1,0 +1,15 @@
+type Producto {
+    id: Int,
+    titulo: String,
+    descripcion: String,
+    fechaCreacion: String,
+}
+
+type Query {
+    obtenerProducto: [Producto]
+}
+
+type Mutation {
+    agregarProducto(titulo: String, descripcion: String): Producto
+    eliminarProducto(id: Int): Producto
+}
